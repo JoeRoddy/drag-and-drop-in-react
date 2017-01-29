@@ -41,9 +41,9 @@ export default class App extends Component {
       }
       //SWAP ITEMS IN ARRAY THEN UPDATE STATE
       if(dragIndex!=-1&&dropIndex!=-1){
-        let dragChar=items[dragIndex];
+        let dragItem=items[dragIndex];
         items[dragIndex]=items[dropIndex];
-        items[dropIndex]=dragChar;
+        items[dropIndex]=dragItem;
       }
       this.setState({items:items});
     }

@@ -25,7 +25,7 @@ export default class Item extends Component {
               onDragStart={e=>this.handleDragStart()}
               onDragOver={e=>this.handleDragOver(e)}
               onDrop={e=>this.handleDrop(e)}>
-              <div className="content">{this.props.content}</div>
+              <div>{this.props.content}</div>
             </div>
         )
     }
