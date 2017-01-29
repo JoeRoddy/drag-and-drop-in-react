@@ -1,4 +1,26 @@
-h1 {
-  font-family: helvetica;
-  font-weight: 200;
+.items-list{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:70vw;
+}
+.item{
+  position: relative;
+  border-radius:12px;
+  height:40vh;
+  width:15vw;
+  border-style: groove;
+  border-color: red;
+  cursor: pointer;
+  font-size: 85px;
+  text-align: center;
+
+  .content{
+    height: 50%;
+    padding-top: 12vh;
+  }
+}
+.item:hover{
+  background-color: rgb(189, 188, 188);
 }
